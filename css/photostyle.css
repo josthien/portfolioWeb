@@ -1,0 +1,27 @@
+body {
+	background-color: burlywood;
+}
+
+.gallery {
+	background-size: cover;
+}
+
+.gallery img {
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+	min-width: 200px;
+	max-height: 150px;
+	min-height: 200px;
+}
+
+.gallery img:hover {
+	filter: grayscale(100%);
+	transform: scale(1.1);
+}
+
+@media (min-width: 60rem){
+	.gallery img {
+		padding: 17px;
+	}
+}

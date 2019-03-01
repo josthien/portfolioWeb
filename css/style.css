@@ -1,0 +1,309 @@
+@import
+url('https://fonts.googleapis.com/css?family=Tangerine');
+@import 
+url('https://fonts.googleapis.com/css?family=Bobber');
+
+body {
+    margin: 0;
+    font-family: courier, sans-serif;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*=======typography==========*/
+h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    margin-top: 1em;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+}
+
+@media (min-width: 60rem) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+@media(min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.button-accent {
+    color: #00ff6c;
+    border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: #00ff6c;
+    color: #232323;
+}
+
+.button-accent1 {
+    font-size:20px;
+    background:orange;
+    padding:1.2em 1.4em;
+    border:none;
+    margin:5px;
+    border-radius:6px;
+    transition:0.5s;
+}
+
+.button-accent1 span{
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.button-accent1 span:after{
+    content:"\00bb";
+    position:absolute;
+    right:-15px;
+    transition:0.5s;
+    opacity:0; 
+}
+
+.button-accent1 {
+    color: #00ff6c;
+    border-color: #3ec923;
+}
+
+.button-accent1:hover,
+
+.button-accent1:hover span{
+    padding-right:20px;
+}
+.button-accent1:hover span:after{
+    opacity:1;
+    right:0;
+}
+
+.button-accent1:focus {
+    background: #00ff6c;
+    color: #232323;
+}
+/*==========header=============*/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .75em;
+    color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #DDD;
+}
+
+@media (min-width:60rem) {
+    .nav {
+        float: right;
+    }
+}
+
+/*=========home-hero========*/
+/* .home-hero {
+    background-image: url(../img/grad2-small.jpg);
+    background-size: cover;
+    background-position: 20% 20%;
+    padding: 10em 0;
+    color: #FFF;
+} */
+
+.home-hero {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    padding: 10em 0;
+    color: #FFF;
+}
+
+.home-hero .container .my-name {
+    font-size: 5rem;
+    text-decoration: none;
+    margin-top: 0rem;
+}
+
+.home-hero .container .hello {
+    font-size: 2rem;
+    text-decoration: none;
+    margin-bottom: 0;
+    margin-top: 10rem;
+}
+
+@media (min-width: 60rem) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+/*=======home-about===========*/
+.home-about-textbox {
+    background-color: #232323;
+    padding: 4em;
+    width: 100vw;
+    margin-left: -2.5%;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    color: #00ff6c;
+    position: absolute;
+    left: 50%;
+    top: .75em;
+    background: #232323;
+    transform: translateX(-50%);
+    padding: 0 .145em;
+}
+
+@media (min-width: 60rem) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .home-about-textbox h1 {
+        top: .3em;
+        padding: 0 .6em;
+    }
+}
+
+.art {
+    font-family: 'Tangerine';
+    font-size: 3rem;
+    margin-top: .5em;
+}
+
+/*===========social media============*/
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25%;
+}
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+    background: rgb(56, 190, 56);
+    color: white;
+  }
+
+  /*LinkedIn*/
+  .fa-linkedin {
+    background: rgb(145, 54, 231);
+    color: white;
+  }
+
+  /*Github*/
+  .fa-github {
+    background: rgb(43, 45, 46);
+    color: white;
+  }
+
+  /*========portfolio===========*/
+  .portfolio {
+      margin: 3em 0;
+  }
+
+  .insta-pic {
+      position: relative;
+      margin: 0;
+  }
+
+  .insta-desc {
+      position: absolute;
+      z-index: 100;
+      bottom: 2em;
+      left: 3em;
+      right: 3em;
+      color: white;
+      background: rgba(0, 0, 0, .75);
+      padding: 1em;
+  }
+
+  /*
+  .portfolio .insta-wrapper .insta-pic .a {
+      position: relative;
+      transform: translateY(-50%);
+  } */

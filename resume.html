@@ -3,83 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Creative Inc.</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<title>Resume</title>
+<link href="css/resumestyle.css" rel="stylesheet" type="text/css">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 	<header>
 		<nav>
             <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="">Resume</a></li>
-            <li><a href="">Photos</a></li>
+            <li><a href="photo.html">Photos</a></li>
             </ul>
 		</nav>
     </header>
-    
+    <!-- resume area -->
+    <div id="master-container">
     <section class="home-hero">
         <div class="container">
-            <h4 class="hello">Hello, I am </h4>
-            <h1 class="my-name">
-                Thien Nguyen
-            </h1>
-            <a href="" class="button button-accent">About me</a>
+            <h1>Here's what I have done</h2>
+
+        <section class="resume">
+            <!-- Florida Tech -->
+                <div class="jobs">
+                    <div class="job-image">
+                        <img src="img/florida-tech.jpg" alt="Florida Tech">
+                    </div>
+                    <div class="job-desc">
+                        <article class="description">
+                            <h3>Florida Institute of Technology, Melbourne, FL</h3>
+                            Graduate student (Sep 2017 – Dec 2018)
+                            <h4>Kaggle Data Science Bowl Competition</h4>
+                            <p class="info">
+                                <ul>
+                                    <li>Collaborated with 3 other students under the supervision of Dr. Debasis Mitra</li>
+                                    <li>Performed data augmentation and organization to increase time and accuracy of training</li>
+                                    <li>Used CNNs to train the network to spot nuclei under various conditions</li>
+                                    <li>Ranked 196th for the first submission of the competition</li>
+                                </ul>
+                            </p>
+                            <h4>Research and analyze the Longest Common Subsequence algorithm</h4>
+                            <p class="info">
+                                <ul>
+                                    <li>Read and analyzed the time complexity of the Longest Common Subsequence algorithm</li>
+                                    <li>Wrote code to test the algorithm in Java, wrote and submitted a report to the professor</li>
+                                </ul>
+                            </p>
+                            <h4>Fingerprint Verification</h4>
+                            <p class="info">
+                                <ul>
+                                    <li>Developed an Windows application for fingerprint verification, employed a SDK from U.Are.U</li>
+                                    <li>Tested on various parameters and database</li>
+                                </ul>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <!-- DOU Nets -->
+                <div class="jobs">
+                    <div class="job-image">
+                            <img src="img/vessel.jpeg" alt="DOU Networks">
+                    </div>
+                    <div class="job-desc">
+                            <article class="description">
+                                    <h3>DOU Networks Company, Ho Chi Minh, Vietnam </h3>
+                                    <h4>Software Engineer (Mar 2016 - Dec 2016)</h4>
+                                    <p class="info">
+                                        <ul>
+                                            <li>Worked with a team for a Vessel management project</li>
+                                            <li>Analyzed business logic, data model and explained to other team members</li>
+                                            <li>Tested and managed the progress of a main modules</li>
+                                            <li>Compiled C# scripts to run the business logic as well as designed the UI with WPF</li>
+                                            <li>Reviewed, performed logical and unit tests and submitted code versions to version control</li>
+                                        </ul>
+                                    </p>
+
+                                </article>  
+                    </div>
+                </div>
+                <!-- RVSC -->
+                <div class="jobs">
+                    <div class="job-image">
+                            <img src="img/erp-software-500x500.jpg" alt="Ryomo Vietnam Solutions Co.">
+                    </div>
+                    <div class="job-desc">
+                            <article class="description">
+                                    <h3>Ryomo Vietnam Solutions Company, Ho Chi Minh, Vietnam </h3>
+                                    <h4>Software Engineer (Jun 2014 - Feb 2016)</h4>
+                                    <p class="info">
+                                        <ul>
+                                            <li>Developed software modules for Gas and Electricity companies in Japan using C# and WPF</li>
+                                            <li>Debugged, unit tested and designed reports</li>
+                                            <li>Communicated with collaborators in Japan about issues in specification documents</li>
+                                            <li>Reported to team leaders and project managers in Japanese</li>
+                                        </ul>
+                                    </p>
+                                </article>      
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
-
-    <section class="home-about">
-        <div class="home-about-textbox">
-            <h1>Who am I</h1>
-            <p>A Software Engineer with 5+ years of hands-on working experience with exposure to Common End-user Software / Data Centric. 
-                Familiar with reading and analyzing business documentations for ERP software project.
-                Focus on quality control with unit and logic testing. </p>
-        </div>
-    </section>
-
-    <section class="portfolio">
-        <h1>Art means a lot to me</h1>
-        
-        <!--portfolio item 1-->
-        <figure class="port-item">
-            <img src="img/portfolio-01.jpg" alt="portfolio item">
-            <figcaption></figcaption>
-        </figure>
-
-        <!--portfolio item 2-->
-        <figure class="port-item">
-                <img src="img/portfolio-02.jpg" alt="portfolio item 1">
-                <figcaption></figcaption>
-            </figure>
-
-        <!--portfolio item 3-->
-        <figure class="port-item">
-                <img src="img/portfolio-03.jpg" alt="portfolio item 1">
-                <figcaption></figcaption>
-            </figure>
-
-        <!--portfolio item 4-->
-        <figure class="port-item">
-                <img src="img/portfolio-04.jpg" alt="portfolio item 1">
-                <figcaption></figcaption>
-            </figure>
-
-        <!--portfolio item 5-->
-        <figure class="port-item">
-                <img src="img/portfolio-05.jpg" alt="portfolio item 1">
-                <figcaption></figcaption>
-            </figure>
-
-        <!--portfolio item 6-->
-        <figure class="port-item">
-                <img src="img/portfolio-06.jpg" alt="portfolio item 1">
-                <figcaption></figcaption>
-            </figure>
-    </section>
-
-    <footer>
-        <p>Let's get connected</p>
-    </footer>
+    </div>
+    <!-- resume area -->
+    <div class="footer">
+            <footer>
+                    <p class="connect">Let's get connected</p>
+                    <!-- Add font awesome icons -->
+                    <a href="https://www.facebook.com/JosThien" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/js.t.photo/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/thien-nguyen-aa185614a/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/josthien" class="fa fa-github"></a>
+             </footer>
+    </div>
 </body>
+
 </html>

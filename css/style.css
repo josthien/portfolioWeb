@@ -165,20 +165,20 @@ nav a:focus {
 }
 
 /*=========home-hero========*/
-/* .home-hero {
+.home-hero {
     background-image: url(../img/grad2-small.jpg);
     background-size: cover;
     background-position: 20% 20%;
     padding: 10em 0;
     color: #FFF;
-} */
+}
 
-.home-hero {
+/* .home-hero {
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
     padding: 10em 0;
     color: #FFF;
-}
+} */
 
 .home-hero .container .my-name {
     font-size: 5rem;
@@ -280,30 +280,3 @@ nav a:focus {
     background: rgb(43, 45, 46);
     color: white;
   }
-
-  /*========portfolio===========*/
-  .portfolio {
-      margin: 3em 0;
-  }
-
-  .insta-pic {
-      position: relative;
-      margin: 0;
-  }
-
-  .insta-desc {
-      position: absolute;
-      z-index: 100;
-      bottom: 2em;
-      left: 3em;
-      right: 3em;
-      color: white;
-      background: rgba(0, 0, 0, .75);
-      padding: 1em;
-  }
-
-  /*
-  .portfolio .insta-wrapper .insta-pic .a {
-      position: relative;
-      transform: translateY(-50%);
-  } */

@@ -44,8 +44,8 @@ img {
   clear: both;
 } */
 
-.footer {
-    margin-top: 31rem;
+footer{
+    margin-top: 31em;
     position: relative;
     right: 0;
     bottom: 0;
@@ -108,7 +108,7 @@ nav a {
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: .75em;
     color: black;
 }
@@ -195,23 +195,28 @@ nav a:focus {
 
   .resume .jobs .job-image {
       text-align: right;
-      flex: 25%;
+      flex: 20%;
+      float: left;
+
   }
+
+  .resume .jobs .job-desc {
+    flex: 50%;
+    float: right;
+    }
 
   .resume .jobs .job-image img {
     padding: 10px;
-	width: 300px;
+	max-width: 300px;
 	min-width: 300px;
 	max-height: 200px;
     min-height: 250px;
     border-radius: 25%;
     margin-right: 20px;
+    position: relative;
   }
 
-  .resume .jobs .job-desc {
-    flex: 50%;
-    }
-
+ 
     .resume .jobs:after {
         content: "";
         display: table;
@@ -236,4 +241,17 @@ nav a:focus {
         margin: 0;
         padding: 0;
     }
-    
+
+    @media only screen and (max-width: 768px) {
+        .resume .jobs .job-image{
+            float: none;;
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .resume .jobs .job-desc{
+            float: none;;
+            width: 100%;
+        }
+    }
